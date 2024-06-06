@@ -13,6 +13,7 @@ type USDBRL struct {
 	Bid string `json:"bid"`
 }
 
+// Inserir os contexts
 func main() {
 	req, err := http.Get("http://localhost:8080/cotacao")
 	if err != nil {
